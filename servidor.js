@@ -12,7 +12,13 @@ var servidor = http.createServer(app);
 //agregamos web sockets
 var io = socketio.listen(servidor);
 //levantamos el servidor en el puerto 5000
-servidor.listen(5000);
+
+var PUERTO = process.env.PORT || 5000;//VER EJEMPLO OPERADOR AND VARIABLES
+
+
+servidor.listen(PUERTO);
+
+//proceess.env es del lado del serviror ya que no exste "document."
 
 
 //---- CONFIGURACION DE EXPRESS ------
@@ -29,6 +35,10 @@ app.set("view engine", "html");
 
 app.get("/",function(req, res){	
 	res.send("hola!");	
+});
+
+app.get("/acerca", function(req, res){
+	res.send("Estas en la seccion 'ACERCA'");
 });
 
 app.get("/pacman",function(req, res){

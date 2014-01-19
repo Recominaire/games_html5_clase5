@@ -1,0 +1,1232 @@
+@font-face {
+	font-family: 'latoregular';
+	src: url('../fuentes/lato-reg-webfont.eot');
+	src: url('../fuentes/lato-reg-webfont.eot?#iefix') format('embedded-opentype'), url('../fuentes/lato-reg-webfont.woff') format('woff'), url('../fuentes/lato-reg-webfont.ttf') format('truetype'), url('../fuentes/lato-reg-webfont.svg#latoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+ Estilos
+ */
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #F1442B;
+	font-family: latoregular, sans-serif;
+	font-size: 20px;
+}
+h1, h2, h3, h4, h5 {
+	margin-top: 0px;
+}
+
+input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius:0px;
+}
+/* ---------------------------- HEADER -------------------*/
+/* -------------------------------------------------------*/
+header {
+	width: 100%;
+	z-index: 100;
+	position: fixed;
+	top: 0px;
+	color: white;
+	background-color: rgb(241, 68, 43);
+	/*background: url("../img/fondo3.jpg") repeat-x scroll center bottom rgba(0, 0, 0, 0);*/
+	/*background:url("images/structure/home_top_botm_bg.jpg") repeat-x scroll center bottom rgba(0, 0, 0, 0)*/
+	border-bottom: 1px solid white;
+}
+
+#logo, #menu-social, #menu li, #menu a, #menu-responsive {
+	line-height: 80px;
+	height: 80px;
+}
+
+#logo {
+	float: left;
+	margin-left: 40px;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #252E33;
+}
+
+#menu {
+	padding: 0px;
+	font-size: 20px;
+	float: right;
+	margin: 0px; /* por que pone margin de 16px?*/
+}
+
+#menu li {
+	display: inline-block;
+}
+#menu li:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.menu-seleccionado {
+	background-color: rgba(0,0,0,0.1);
+}
+
+#menu a {
+	display: inline-block;
+	padding: 0px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+#menu-responsive {
+	display: none;
+	cursor: pointer;
+	padding: 0px 15px;
+	border-left: 1px solid rgba(240,240,240,0.6);
+	float: right;
+}
+
+#menu-social {
+	float: right;
+	margin-left: 20px;
+	width: 90px;
+	padding-right: 20px;
+}
+
+#menu-responsive-img {
+	vertical-align: middle;
+	height: 40px;
+}
+
+#header-relleno {
+	height: 81px;
+}
+
+/* ------------------PANTALLA DE BIENVENIDA -------------------*/
+/* -------------------------------------------------------*/
+
+#bienvenida {
+	color: white;
+	/* revisar http://css-tricks.com/perfect-full-page-background-image/*/
+	background-color: white;
+	/*background: url("../img/conference_room.jpg") no-repeat fixed center center /cover transparent;*/
+	/*background-image: url("../img/conference_room.jpg");*/
+	background-image: url("../img/galaxia.jpg");
+	/* fix */
+	background-attachment: fixed;
+	background-position: center 60px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#bienvenida-cursos {
+	text-align: center;
+}
+#slogan {
+	text-shadow: 1px 1px 3px black;
+	font-size: 40px;
+	text-align: center;
+	padding: 40px;
+}
+.bienvenida-curso {
+	text-decoration: none;
+	display: inline-block;
+	height: 350px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.5);
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	width: 250px;
+}
+.bienvenida-curso:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.9);
+}
+.curso-logo {
+	height: 250px;
+}
+.curso-titulo {
+	margin-top: 20px;
+	font-size: 20px;
+	color: #222222;
+	/*color:#555555;*/
+}
+.curso-titulo span {
+	color: #2C9BC3;
+	font-weight: bold;
+}
+/* ------------------PANTALLA DE info -------------------*/
+/* -------------------------------------------------------*/
+#info {
+	background-color: white;
+	padding: 40px;
+	font-size: 20px;
+}
+
+#info-frase, #info-imagen {
+	display: inline-block;
+}
+
+#info-frase {
+	width: 70%;
+}
+
+#info-imagen {
+}
+
+/* ------- clase de utileria ---------*/
+.clear {
+	clear: both;
+}
+.flexible {
+	width: 100%;
+}
+.oculto, .movil {
+	display: none;
+}
+
+.ventana-enviar {
+	text-align: center;
+}
+
+.imagen-seccion {
+	text-align: center;
+	font-size: 40px;
+	height: 300px;
+	line-height: 300px;
+	background-attachment: fixed;
+	background-position: center 60px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*-webkit-background-size : 100%;
+	 -moz-background-size: 100%;
+	 -o-background-size: 100%;
+	 background-size: 100%;*/
+}
+/* ------------------PANTALLA naranja 2 -------------------*/
+/* -------------------------------------------------------*/
+
+#tecnologias {
+	font-size: 20px;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+#tecnologias h2, #tecnologias h3 {
+	text-align: center;
+}
+
+.tecnologia {
+	vertical-align: top;
+	display: inline-block;
+	width: 160px;
+	color: white;
+	text-decoration: none;
+}
+
+/* ------------------ FOOTER -------------------*/
+/* -------------------------------------------------------*/
+footer {
+	padding: 40px;
+	text-align: justify;
+	color: white;
+	font-size: 18px;
+	background-color: #252E33;
+}
+
+footer a {
+	margin-right: 5px;
+	color: #0092BF;
+}
+
+footer a:hover {
+	color: #F1442B;
+}
+
+footer:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+/* --- tres columnas de la caja del footer ---*/
+#powered-by {
+	width: 30%;
+}
+
+#footer-post-recientes {
+	height: 260px;
+	padding-left: 4%;
+	width: 30%;
+	border-left: 1px solid #43535C;
+	border-right: 1px solid #43535C;
+}
+
+#sociales {
+	padding-left: 4%;
+	width: 30%;
+}
+
+#sociales h3 {
+	margin-bottom: 10px;
+}
+
+/*-- caja de suscripcion (dentro de sociales)--*/
+
+#suscripcion {
+	margin-top: 40px;
+}
+
+#sucripcion-email {
+	width: 80%;
+	height: 35px;
+	padding: 0px 5px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	border-style: none;
+	background: none repeat scroll 0 0 #FCFCFC;
+	font-size: 20px;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+#suscripcion-boton-contenedor {
+	margin-top: 10px;
+	text-align: left;
+}
+
+#boton-suscripcion {
+	display: inline-block;
+}
+
+#sucripcion-email:focus {
+	width: 90%;
+	outline: none;
+	-o-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px #51CBEE;
+	-ms-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px #51CBEE;
+	-webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px #51CBEE;
+	-moz-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px #51CBEE;
+	box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px #51CBEE;
+}
+
+#powered-by, #footer-post-recientes, #sociales {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#footer-post-recientes ul, #powered-by ul {
+	padding-left: 0px;
+}
+
+#footer-post-recientes li, #powered-by li {
+	padding-left: 30px;
+	height: 40px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+/* --------------------------------------  BLOG ---------------------------------------------------  */
+/* --------------------------------------  BLOG ---------------------------------------------------  */
+/* --------------------------------------  BLOG ---------------------------------------------------  */
+
+#blog h1, #blog h2, #blog h3, #blog h4 {
+	color: rgb(52, 52, 52);
+}
+
+#blog {
+	text-align: justify;
+	padding: 60px 0px 0px 0px;
+	background-color: white;
+}
+
+#blog:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+#posts {
+	vertical-align: top;
+	display: inline-block;
+	width: 80%;
+}
+
+#categorias {
+	vertical-align: top;
+	display: inline-block;
+	width: 20%;
+}
+
+.post {
+	margin-bottom: 100px;
+	text-align: justify;
+}
+
+.post:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.post-articulo {
+	margin-left: 3.5%;
+	margin-right: 3%;
+	vertical-align: top;
+	display: inline-block;
+	width: 68%;
+}
+
+.post-datos {
+	text-align: right;
+	font-size: 16px;
+	vertical-align: top;
+	display: inline-block;
+	width: 25%;
+}
+
+.post-datos .post-dato:not(:first-child){
+margin-top:27px;
+}
+
+#categorias ul {
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#categorias li {
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+#categorias li:hover {
+	background-color: #F4F4F4;
+}
+
+#categorias a {
+	display: inline-block;
+	height: 40px;
+	padding-left: 20px;
+	text-decoration: none;
+	color: rgb(52, 52, 52);
+	width: 100%;
+}
+
+#categorias li:hover a {
+	color: #0092BF;
+}
+
+.post-completo, .post-preview{
+	text-align: left;
+}
+
+.post-social {
+	font-size: 0.1px;
+	text-align: right;
+}
+
+.post-dato {
+	border-bottom: 1px solid #d7d7d7;
+	text-transform: uppercase;
+}
+
+.post-dato h4 {
+	margin-bottom: 5px;
+}
+
+.post-dato h2 {
+	font-size: 27px;
+	font-weight: 300;
+	color: rgb(102, 102, 102) !important;
+}
+
+.post-facebook, .post-twitter {
+	text-align: center;
+	display: inline-block;
+	line-height: 52px;
+	width: 52px;
+	height: 52px;
+	border: 1px solid #d7d7d7;
+	border-top: none;
+}
+
+.post-facebook {
+	border-right: 0px;
+}
+
+.post-facebook span, .post-twitter span {
+	vertical-align: middle;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+}
+
+.post-facebook span {
+	background: url("/estatico/img/post-facebook-black.svg") no-repeat top center;
+	background-size: 20px;
+}
+
+.post-twitter span {
+	background: url("/estatico/img/post-twitter-black.svg") no-repeat top center;
+	background-size: 20px;
+}
+
+.post-facebook:hover {
+	/*background-color: #3b5999;*/
+	background-color: #3b5998;
+}
+
+.post-facebook:hover span {
+	background: url("/estatico/img/post-facebook.svg") no-repeat top center;
+	background-size: 20px;
+}
+
+.post-twitter:hover {
+	background-color: #03ABEA;
+}
+
+.post-twitter:hover span {
+	background: url("/estatico/img/post-twitter.svg") no-repeat top center;
+	background-size: 20px;
+}
+
+.post-articulo h1 {
+	color: rgb(241, 68, 43) !important;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 2.5em;
+}
+
+.post-titulo-preview {
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.post-titulo-preview a {
+	text-decoration: none;
+	color: rgb(241, 68, 43) !important;
+}
+
+.post-titulo-preview a:hover {
+	color: rgb(241, 68, 43) !important;
+	text-shadow: 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 3px orange;
+}
+
+.post-imagen-preview {
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.post-imagen-preview:hover {
+	/*box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px #51CBEE;*/
+	box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px rgb(241, 68, 43);
+	-o-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px rgb(241, 68, 43);
+	-ms-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px rgb(241, 68, 43);
+	-moz-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px rgb(241, 68, 43);
+	-webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 5px 1px rgb(241, 68, 43);
+}
+
+.post-ver {
+	color: rgb(241, 68, 43);
+	text-decoration: none;
+	transition: all 0.3s linear;
+}
+
+.post-ver:hover {
+	text-shadow: 0 2px 0 rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,0.1), 0 0 3px orange;
+}
+
+.comentarios {
+	margin-top: 40px;
+}
+
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {
+	width: 100% !important;
+}
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {
+	width: 100% !important;
+}
+
+/* --------------------------------------  CONTACTO ---------------------------------------------------  */
+/* --------------------------------------  CONTACTO ---------------------------------------------------  */
+/* --------------------------------------  CONTACTO ---------------------------------------------------  */
+
+#contacto-imagen {
+	color: white;
+	background-image: url("../img/buzon_min.jpg");
+}
+
+#contacto-imagen #contacto-frase {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	line-height: 100%;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+}
+
+#contacto-frase h2 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#contacto {
+	/*background: url("../img/buzon.jpg") no-repeat scroll center center /cover transparent;*/
+	background-color: white;
+	padding: 40px;
+	color: #252525;
+}
+
+#contacto span {
+	margin-left: 5px;
+	color: red;
+}
+
+.contacto-renglon {
+	text-align: justify;
+}
+
+.contacto-renglon:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.contacto-dato {
+	display: inline-block;
+	width: 50%;
+}
+
+.contacto-dato input {
+	padding: 0px 5px;
+	width: 70%;
+	border: 1px solid #CCCCCC;
+	height: 35px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 20px;
+	transition: all 0.3s linear;
+}
+
+.contacto-dato input:focus {
+	width: 80%;
+	border-width: 2px;
+	border-color: gray;
+}
+
+.contacto-textarea {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.contacto-textarea textarea {
+	height: 300px;
+	font-size: 20px;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.contacto-textarea textarea:focus {
+	border-width: 2px;
+	border-color: gray;
+}
+
+#boton-contacto {
+	display: inline-block;
+	padding: 25px 20px;
+	width: 200px;
+}
+
+.boton, .boton-chico {
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+	margin: 0 auto;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	border: solid 1px #D94E3B;
+	background: #cb3b27;
+	font-size: 20px;
+	text-align: center;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.boton {
+	-webkit-box-shadow: 0px 9px 0px #84261a;
+	-moz-box-shadow: 0px 9px 0px #84261a;
+	-o-box-shadow: 0px 9px 0px #84261a;
+	-ms-box-shadow: 0px 9px 0px #84261a;
+	box-shadow: 0px 9px 0px #84261a;
+}
+
+.boton-chico {
+	padding: 8px;
+	-webkit-box-shadow: 0px 4px 0px #84261a;
+	-moz-box-shadow: 0px 4px 0px #84261a;
+	-o-box-shadow: 0px 4px 0px #84261a;
+	-ms-box-shadow: 0px 4px 0px #84261a;
+	box-shadow: 0px 4px 0px #84261a;
+}
+
+.boton:hover, .boton-chico:hover {
+	cursor: pointer;
+}
+
+.boton:active, .boton-chico:active {
+	-webkit-box-shadow: 0px 2px 0px #84261a;
+	-moz-box-shadow: 0px 2px 0px #84261a;
+	-o-box-shadow: 0px 2px 0px #84261a;
+	-ms-box-shadow: 0px 2px 0px #84261a;
+	box-shadow: 0px 2px 0px #84261a;
+	position: relative;
+	top: 7px;
+}
+
+.boton-chico:active {
+	top: 3px;
+}
+
+/* --------------------------------------  CURSOS SECCION ---------------------------------------------------  */
+#cursos {
+	background-color: white;
+}
+
+/* solo sirve para cambiar colores de fondo*/
+.contenedor-curso-naranja, .contenedor-curso {
+
+}
+
+.contenedor-curso-naranja {
+	color: white;
+	background-color: rgb(241, 68, 43);
+}
+
+.curso-caja {
+	/*
+	 content: "";
+	 display: inline-block;
+	 width: 100%;
+	 */
+}
+
+.curso-caja-izq {
+	vertical-align: top;
+	display: inline-block;
+	width: 25%;
+}
+
+.curso-caja-der {
+	vertical-align: top;
+	display: inline-block;
+	width: 75%;
+}
+
+.contenedor-curso {
+	padding: 80px 40px;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	color: rgb(52, 52, 52);
+}
+
+.curso-caja-der h1 {
+	color: black;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+
+.contenedor-curso-naranja .curso-caja-der h1 {
+	color: white;
+}
+
+.curso-caja-der h2 {
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+.curso-caja-der p {
+	font-size: 20px;
+}
+
+.curso-imagen {
+	width: 100%;
+}
+
+.curso-mas-info {
+	padding-top: 5px;
+}
+
+.contenedor-curso .curso-mas-info a {
+	color: #F1442B;
+}
+
+.contenedor-curso .curso-mas-info a:hover {
+	color: #0092BF;
+}
+
+.curso-mas-info {
+	font-size: 20px;
+}
+
+/*------------------------------------- ACERCA --------------------------------------------*/
+/*------------------------------------- ACERCA --------------------------------------------*/
+/*------------------------------------- ACERCA --------------------------------------------*/
+
+#acerca {
+	background-color: white;
+}
+
+#acerca-imagen {
+	color: rgb(241, 68, 43);
+	background-image: url("../img/nyan_cat_min.jpg");
+}
+
+.colaborador {
+	padding: 0px 40px 40px 40px;
+}
+
+.colaborador {
+	text-align: right;
+}
+
+.colaborador:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.colaborador-imagen {
+	float: left;
+	width: 30%;
+}
+
+.colaborador-nombre {
+	text-align: center;
+}
+
+.colaborador-cv {
+	margin-left: 35%;
+	width: 65%;
+	text-align: left;
+}
+
+.resumen-acerca {
+	font-size: 30px;
+	padding: 40px 40px 20px;
+}
+
+@media only screen and (max-width: 850px) {
+
+	/* por ahora deshabilitamos para tabletas el menu fijo*/
+	header {
+		position: static;
+	}
+
+	.ocultar-en-moviles {
+		display: none;
+	}
+	
+	#bienvenida {
+		background-attachment: scroll;
+		background-position: center 0px;
+	}
+	
+	#suscripcion{
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 850px) {
+
+	header {
+		border-bottom: 1px solid rgba(240,240,240,0.6);
+	}
+
+	#header-relleno {
+		display: none;
+	}
+
+	#menu-responsive {
+		display: block;
+	}
+
+	#menu {
+		width: 100%;
+		background-color: rgb(241, 68, 43);
+		position: absolute;
+		top: 81px;
+	}
+
+	#menu li {
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		display: block;
+		border-bottom: 1px solid rgba(240,240,240,0.6);
+	}
+
+	#menu a {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	#powered-by {
+		display: none;
+		font-size: 90px;
+	}
+
+	#footer-post-recientes {
+		border-left-width: 0px;
+	}
+
+	#footer-post-recientes, #sociales {
+		width: 45%;
+	}
+
+	#categorias {
+		display: none;
+	}
+
+	#posts {
+		width: 100%;
+	}
+
+	#post-datos {
+		width: 40%;
+	}
+
+	#post-articulo {
+		width: 60%;
+	}
+
+	.post-dato h2 {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	#logo {
+		display: none;
+	}
+
+	#header-relleno {
+		display: none;
+	}
+
+	.imagen-seccion {
+		background-position: center 60px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#logo {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	header {
+		border-bottom: 1px solid rgba(240,240,240,0.6);
+	}
+
+	#menu-responsive {
+		display: block;
+	}
+
+	#menu {
+		width: 100%;
+		background-color: rgb(241, 68, 43);
+		position: absolute;
+		top: 61px;
+	}
+
+	#menu li {
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		display: block;
+		border-bottom: 1px solid rgba(240,240,240,0.6);
+	}
+
+	#menu a {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	#slogan {
+		padding: 10px;
+	}
+	.movil {
+		display: inherit;
+	}
+
+	#logo, #menu-social, #menu-responsive, #menu li, #menu a {
+		height: 60px;
+		line-height: 60px;
+	}
+
+	#header-relleno {
+		display: none;
+	}
+
+	header {
+		background-color: rgb(241, 68, 43);
+	}
+
+	#logo {
+		margin-left: 10px;
+	}
+
+	#menu {
+		text-align: center;
+	}
+
+	#menu li {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#menu a {
+		text-align: center;
+	}
+
+	.bienvenida-curso {
+		height: 350px;
+	}
+
+	.curso-logo {
+		height: 200px;
+	}
+
+	.curso-titulo {
+		font-size: 25px;
+	}
+	#powered-by {
+		display: none;
+	}
+	#footer-post-recientes {
+		height: auto;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #43535C;
+		margin-bottom: 20px;
+	}
+	#footer-post-recientes, #sociales {
+		display: block;
+		width: 100%;
+	}
+	.curso-caja-izq {
+		display: block;
+	}
+	.curso-caja-der {
+		display: block;
+		width: 100%;
+	}
+	/* hacemos que la imagen flote para que los elementos de linea se acomoden alrededor */
+	.curso-imagen {
+		float: left;
+		height: 100px;
+	}
+
+	.curso-caja-der h1 {
+		font-size: 25px;
+	}
+
+	.curso-caja-der h2 {
+		font-size: 20px;
+	}
+
+	.contenedor-curso {
+		padding: 20px 10px;
+	}
+
+	#blog {
+		padding: 20px 0px;
+	}
+
+	#posts {
+		width: 100%;
+	}
+	.post {
+		margin-bottom: 20px;
+	}
+	.post-datos {
+		display: none;
+	}
+
+	.post-articulo {
+		width: 93%;
+	}
+
+	.post-articulo {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.post-articulo h1 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.post-articulo h2 {
+		font-size: 22px;
+		text-align: center;
+	}
+
+	#categorias {
+		display: none;
+	}
+
+	.post-social {
+		text-align: left;
+	}
+
+	.post-social a {
+		border-top: 1px solid #D7D7D7;
+	}
+	/* para moviles */
+	.post-social h4 {
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
+
+	.post-social span, .fecha-movil span {
+		font-weight: lighter;
+		font-style: italic;
+	}
+
+	.contacto-dato {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.contacto-dato input:hover {
+		width: 90%;
+	}
+
+	.contacto-dato input {
+		width: 80%;
+	}
+
+	.contacto-dato h2 {
+		margin-bottom: 10px;
+		display: inline-block;
+		font-size: 20px;
+	}
+
+	.contacto-textarea {
+		margin-top: 0px;
+	}
+
+	.contacto-textarea h2 {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.contacto-renglon:after {
+		display: block;
+	}
+
+	#contacto {
+		padding: 15px;
+	}
+
+	.bienvenida-curso {
+		width: 80%;
+		padding: 15px;
+	}
+
+	#info {
+		padding: 15px;
+	}
+
+	footer {
+		padding: 15px;
+	}
+
+	.imagen-seccion {
+		font-size: 30px;
+	}
+
+	#acerca-imagen h1 {
+		display: none;
+	}
+
+	.resumen-acerca {
+		font-size: 20px;
+		padding: 15px;
+	}
+	.resumen-acerca p {
+		margin-top: 0px;
+	}
+
+	.colaborador {
+		padding: 15px;
+		text-align: justify;
+	}
+
+	.colaborador-imagen {
+		vertical-align: top;
+		display: inline-block;
+		float: none;
+		width: 30%;
+	}
+
+	.colaborador-nombre {
+		display: inline-block;
+		width: 60%;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+
+	.colaborador-nombre:after {
+		content: "";
+		width: 100%;
+		height: 0.1px;
+	}
+
+	.colaborador-cv {
+		margin-left: auto;
+		width: auto;
+	}
+}

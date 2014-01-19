@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:5000");
+var socket = io.connect(document.location.origin);
 
 Q.component("controlRemoto", {
 	added : function() {

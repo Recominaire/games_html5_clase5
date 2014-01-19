@@ -4,8 +4,8 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<title>Juego Quintus</title>
-
-		<link href='http://fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
+		<!--quitar http: a la liga de google fonts y a todos los links externos-->
+		<link href='//fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
 
 		<style>
 			body {
@@ -52,7 +52,7 @@
 		</script>
 		
 		<!-- agregar la libreria de socket.io aqui -->
-		<script src="http://localhost:5000/socket.io/socket.io.js"></script>
+		<script src="/socket.io/socket.io.js"></script><!--se cambia esta ruta para que funcione heroku-->
 		<script src="estatico/javascript/multiusuario.js"></script>
 
 	</body>
