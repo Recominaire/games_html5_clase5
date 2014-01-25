@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Juego Quintus</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				background-color: black;
+			}
+			canvas {
+				border-style: solid;
+				border-color: white;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<canvas id="juego" height="440" width="600">
+			Tu navegador no soporta Canvas
+		</canvas>
+
+		<!-- IMPORTAR LIBRERIAS DE QUINTUS POR CDN-->
+		<!--
+		<script src='http://cdn.html5quintus.com/v0.1.6/quintus-all.min.js'></script>
+		-->
+
+		<!-- IMPORTAR LIBRERIAS DE QUINTUS DE LOS ARCHIVOS LOCALES -->
+		<script src='estatico/javascript/lib/quintus.js'></script>
+		<script src='estatico/javascript/lib/quintus_sprites.js'></script>
+		<script src='estatico/javascript/lib/quintus_scenes.js'></script>
+		<script src='estatico/javascript/lib/quintus_input.js'></script>
+		<script src='estatico/javascript/lib/quintus_2d.js'></script>
+		<script src='estatico/javascript/lib/quintus_touch.js'></script>
+		<script src='estatico/javascript/lib/quintus_ui.js'></script>
+		<script src='estatico/javascript/lib/quintus_audio.js'></script>
+		<script src='estatico/javascript/lib/quintus_anim.js'></script>
+
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.5/socket.io.min.js"></script>
+		-->
+
+		<!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- CODIGO PARA MULTI USUARIO -->
+		<script>
+			var TIPO_JUGADOR = "<%=jugador%>";
+		</script>
+
+		<script src="estatico/javascript/juego_multi.js"></script>
+		<script src="estatico/javascript/unusuario.js"></script>
+
+		<!-- MULTI USUARIO 
+		<script src="http://<%=socketURL%>/socket.io/socket.io.js"></script>
+		<script src="estatico/javascript/multiusuario.js"></script>
+		-->
+
+	</body>
+</html>

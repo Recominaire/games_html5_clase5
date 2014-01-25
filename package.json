@@ -1,0 +1,15 @@
+{
+	"name": "test",
+	"version": "0.0.1",
+	"engines": {
+		"node": "0.10.24"
+	},
+	"private": "true",
+	"description": "prueba chat node",
+	"dependencies": {
+		"socket.io": "0.9.16",
+		"validator": "2.0",
+		"express": "3.3",
+		"ejs": "0.8.5"
+	}
+}
